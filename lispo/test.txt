@@ -1,0 +1,49 @@
+缘「阳「阳「「quote」」」」
+  「指  x」指  x
+缘「quote list」
+  一「一「quote  月」「quote x」」
+    一「quote  指」
+      一「quote x」
+        quote「」
+缘「quote def」
+  「指  x  y」月
+    list
+      quote  缘
+      list「quote quote」x
+      y
+def eval
+  「月 x」月 x
+
+
+
+def last
+  「月  x」指
+    预「止「阴  x」」
+      阳  x
+      last「阴  x」
+last「quote「a b c
+
+def concat
+  「月  x y」指
+    预「止  x」y
+      一「阳  x」
+        concat「阴  x」y
+
+concat「quote「a b c」」「quote「x y z」
+
+def concat2
+  「月  x y」指
+    预「止  y」x
+      一 x
+        concat2「concat x x」「阴  y」
+concat2「quote「a」」「quote「x y z」
+
+def concat3
+  「月  x y」指
+    预「止  y」x
+      一「阳  y」
+        concat3「concat2 x x」「阴  y」
+concat3「quote「a」」「quote「x
+concat3「quote「a b」」「quote「x
+concat3「quote「a」」「quote「x y
+concat3「quote「a b」」「quote「x y」」「javascript」RangeError: Maximum call stack size exceeded
